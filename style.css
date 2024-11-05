@@ -1,4 +1,6 @@
-
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -164,6 +166,7 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 .picture1 img {
@@ -178,6 +181,7 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 .picture2 img {
@@ -192,10 +196,44 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 .picture3 img {
     width: 100%; 
     height: auto; 
    
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+section {
+    opacity: 0;
+    animation: fadeInSlideUp 1s ease forwards;
+}
+
+#home {
+    animation-delay: 0.3s;
+}
+
+#about {
+    animation-delay: 0.6s;
+}
+
+#skills {
+    animation-delay: 0.9s;
+}
+
+#portfolio {
+    animation-delay: 1.2s;
 }
